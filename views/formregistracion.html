@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/formregistracion.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+
+
+    <title>Registrate</title>
+</head>
+<body>
+    <div class="contenedor-form">
+        <form >
+            <h2><img src="../Multimedia/compass-fill.svg"  alt="Brujula" class="imagen"><h2 class="brujula">Registrate</h2><hr>
+            <div>
+                <label for="validationDefault01" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="validacion1 validationDefault01" placeholder="Nombre" required>
+            </div> <br>
+            <div>
+                <label for="validationDefault02" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="validacion2 validationDefault02" placeholder="Apellido"  required>
+            </div><br>
+            <div>
+                <label for="validationDefaultUsername" class="form-label">Email:</label>
+                <div class="input-group">
+                <input type="email" class="form-control" id="validacion3 validationDefaultUsername"  aria-describedby="inputGroupPrepend2" pattern="[A-Za-z0-9]"   required>
+                </div>
+            </div> <br>
+            <div>
+                <label for="validationDefaultUsername" class="form-label">Contraseña:</label>
+                <div class="input-group">
+                <input type="password" class="form-control" id="validacion3 validationDefaultUsername"  aria-describedby="inputGroupPrepend2" pattern="[A-Za-z0*9.+-_]+@[a-a]\.[a-z]{2,23}" required>  
+            </div>
+            <small>La contraseña debe contener al menos 8 caracteres</small>  
+            </div> <br>
+            <div>
+                <label for="validationDefault03" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="validacion4 validationDefault03" pattern="[0-18]{19,100}" required>
+            </div> <br>
+            <div>
+                <label for="validationDefault04" class="form-label">Genero</label>
+                <select class="form-select" id="validacion5 validationDefault04" required>
+                <option selected disabled value="">Selecciona</option>
+                <option>Hombre</option>
+                <option>Mujer</option>
+                <option>No binario</option>
+                </select>
+            </div> <br>
+            <div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    Acepto terminos y condiciones.
+                </label>
+                </div><br>
+            </div>
+            <div><button class="btn btn-primary" id="boton" type="submit">Listo!</button>
+            </div>
+        </form>
+    </div>
+    <a id="link" href="./log-in.html"></a>
+
+
+    <script src="../JS/formregistracion.js"></script>
+    <script src="../JS/formregistracion2.js"></script>
+
+</body>
+</html>

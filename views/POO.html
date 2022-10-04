@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilosindex.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <title>POO</title>
+</head>
+
+<body>
+  <header>
+    <!-- cabecera principal para los links y el titulo
+    fecha 19/6/22
+    autor: Rocio Olszevicki
+  descripcion: Header con links principales que llevan a las distintas paginas-->
+    <header>
+      <nav class="navbar bg-info">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../Multimedia/compass-fill.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          La Brujula
+        </a>
+        <ul class="nav justify-content-center bg-info mb">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../views/main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/HTML.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/javascript.html">Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/POO.html">POO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/log-in.html">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+    <main>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: primera fila, significado del POO y origenes-->
+      <div id="div-id" class="container py-4">
+
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">1-Programacion Orientado a Objetos</h1>
+              <p class="col-md-8 fs-4">La revolucion en el mundo IT llego para quedarse, dar solucion y soporte a todos
+                los problemas del futuro</p>
+              <div>
+
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                      <h2>Que es POO?</h2><br>
+                      <img src="../Multimedia/POO.PNG" alt="" width="100%"><br>
+                      <p> Llaman paradigmas de programación y entre ellos están la programación orientada a objetos
+                        (POO)
+                        y la programación estructurada.</p>
+                      <p>La POO es una forma de programar que trata de encontrar una solución a estos problemas.
+                        Introduce
+                        nuevos conceptos, que superan y amplían conceptos antiguos ya conocidos.</p>
+                      <p>La POO se fue convirtiendo en el estilo de programación dominante a mediados de los años 1980,
+                        en gran parte debido a la influencia de C++, una extensión del lenguaje de programación C. Su
+                        dominación fue consolidada gracias al auge de las interfaces gráficas de usuario, para las
+                        cuales la POO está particularmente bien adaptada. En este caso, se habla también de programación
+                        dirigida por eventos.</p>
+                      <ul>
+                        <li>Clase</li>
+                        <li>Atributos</li>
+                        <li>Objetos</li>
+                        <li>Metodos</li>
+                        <li>Eventos</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <h2>Origenes de la Proramacion Orientada a Objetos?</h2>
+                      <p>Los conceptos de la POO tienen origen en Simula 67, un lenguaje diseñado para hacer
+                        simulaciones,
+                        creado por Ole-Johan Dahl y Kristen Nygaard, del Centro de Cómputo Noruego en Oslo. En este
+                        centro
+                        se trabajaba en simulaciones de naves, que fueron confundidas por la explosión combinatoria de
+                        cómo las diversas cualidades de diferentes naves podían afectar unas a las otras. La idea surgió
+                        al agrupar los diversos tipos de naves en diversas clases de objetos, siendo responsable cada
+                        clase de objetos de definir sus "propios" datos y comportamientos. Fueron refinados más tarde en
+                        Smalltalk, desarrollado en Simula en Xerox PARC (cuya primera versión fue escrita sobre Basic)
+                        pero diseñado para ser un sistema completamente dinámico en el cual los objetos se podrían crear
+                        y
+                        modificar "sobre la marcha" (en tiempo de ejecución) en lugar de tener un sistema basado en
+                        programas estáticos.</p>
+                      <img src="../Multimedia/simula1.PNG" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: segunda fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                  <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>2-Caracteristicas!</h2><br>
+                    <p>Las características de orientación a objetos fueron agregadas a muchos lenguajes existentes
+                      durante ese tiempo, incluyendo Ada, BASIC, Lisp más Pascal, entre otros. La adición de estas
+                      características a los lenguajes que no fueron diseñados inicialmente para ellas condujo a menudo a
+                      problemas de compatibilidad y en la capacidad de mantenimiento del código. Los lenguajes
+                      orientados a objetos "puros", por su parte, carecían de las características de las cuales muchos
+                      programadores habían venido a depender. Para saltar este obstáculo, se hicieron muchas tentativas
+                      para crear nuevos lenguajes basados en métodos orientados a objetos, pero permitiendo algunas
+                      características imperativas de maneras "seguras". El lenguaje de programación Eiffel de Bertrand
+                      Meyer fue un temprano y moderadamente acertado lenguaje con esos objetivos, pero ahora ha sido
+                      esencialmente reemplazado por Java, en gran parte debido a la aparición de Internet y a la
+                      implementación de la máquina virtual Java en la mayoría de navegadores web. PHP en su versión 5 se
+                      ha modificado; soporta una orientación completa a objetos, cumpliendo todas las características
+                      propias de la orientación a objetos.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 bg-light border rounded-3">
+                    <p>Los conceptos de la POO tienen origen en Simula 67, un lenguaje diseñado para hacer simulaciones,
+                      creado por Ole-Johan Dahl y Kristen Nygaard, del Centro de Cómputo Noruego en Oslo. En este centro
+                      se trabajaba en simulaciones de naves, que fueron confundidas por la explosión combinatoria de
+                      cómo las diversas cualidades de diferentes naves podían afectar unas a las otras. La idea surgió
+                      al agrupar los diversos tipos de naves en diversas clases de objetos, siendo responsable cada
+                      clase de objetos de definir sus "propios" datos y comportamientos. Fueron refinados más tarde en
+                      Smalltalk, desarrollado en Simula en Xerox PARC (cuya primera versión fue escrita sobre Basic)
+                      pero diseñado para ser un sistema completamente dinámico en el cual los objetos se podrían crear y
+                      modificar "sobre la marcha" (en tiempo de ejecución) en lugar de tener un sistema basado en
+                      programas estáticos.</p>
+                    <img src="../Multimedia/lineas.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: tercera fila, significado del POO y origenes
+            descripcion: describiendo sobre Simula67, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <p class="col-md-8 fs-4">
+                <div>
+                  <h2>Veamos como es Simula 67</h2><br>
+                  <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                      <div class="h-100 p-5 text-white bg-dark rounded-3">
+                        <img src="../Multimedia/codigo-simula.PNG" alt="" width="100%"><br> <br>
+                        <p>El mensaje está codificado en el bloque de código de la clase Saludos. Este bloque de código
+                          se ejecuta solamente cuando existe una instancia o variable de tipo Saludos, lo que ocurre
+                          efectivamente al crear una instancia por medio de la instrucción New. En Simula, los objetos
+                          siempre son manejados por medio de referencias.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2></h2>
+                        <img src="../Multimedia/simulaejemplo.PNG" alt="" width="100%">
+                        <p>SIMULA 67 Ejemplo de bloque exterior: comienza la clase A; … separar; … ; referencia(A) U, V;
+                          U: - nueva A; bloque interior: comienza la clase B; … separar; … ; referencia (B) X; ref(A) W;
+                          V : - W : - nueva A; X: - nueva B; . . . computadora L: llamada (X); . . . bloque interior
+                          final; . . . llamada (V); . . . bloque exterior final; C SC 520 Principios de lenguajes de
+                          programación 20</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: cuarta fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">Clases</h1>
+
+              <div>
+
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+
+                      <img src="../Multimedia/cubos.PNG" alt="">
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <p>Clase
+                        Una clase es una especie de "plantilla" en la que se definen los atributos y métodos
+                        predeterminados de un tipo de objeto. Esta plantilla se crea para poder crear objetos
+                        fácilmente. Al método de crear nuevos objetos mediante la lectura y recuperación de los
+                        atributos y métodos de una clase se le conoce como instanciación.
+                      </p>
+                      <img src="../Multimedia/simula.PNG" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: quinta fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">Objetos</h1>
+              <p class="col-md-8 fs-4"></p>
+              <div>
+
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                      <h2></h2><br>
+                      <img src="../Multimedia/obj.PNG" alt="" width="100%"><br>
+                      <p></p>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <p>Instancia de una clase. Entidad provista de un conjunto de propiedades o atributos (datos) y de
+                        comportamiento o funcionalidad (métodos), los mismos que consecuentemente reaccionan a eventos.
+                        Se corresponden con los objetos reales del mundo que nos rodea, o con objetos internos del
+                        sistema (del programa).</p>
+                      <img src="../Multimedia/simula.PNG" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: sexta fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">Metodos</h1>
+     
+              <div>
+
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+
+                      <img src="../Multimedia/comida.PNG" alt="" width="100%"><br>
+                      <p> </p>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <p>Esta asociado a un objeto (o a una clase de objetos), cuya ejecución se desencadena tras la
+                        recepción de un "mensaje". Desde el punto de vista del comportamiento, es lo que el objeto puede
+                        hacer. Un método puede producir un cambio en las propiedades del objeto, o la generación de un
+                        "evento" con un nuevo mensaje para otro objeto del sistema.</p>
+                      <img src="../Multimedia/simula.PNG" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: septima fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">Atributos</h1>
+              <div>
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                      <h2></h2><br>
+                      <img src="../Multimedia/atributos.PNG" alt="" width="100%"><br>
+                      
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <p>Los atributos son las características del objeto. Toman valores durante la vida del mismo. Estos valores determinan el estado del objeto.
+                        Cuando definimos un atributo se establece su nombre y su tipo. Los atributos suelen ser sustantivos. Marcan las propiedades del objeto.
+                        Una persona puede tener varios atributos. Además de las variables (y clases) definidas por Java, es posible agregar atributos propios, por ejemplo documento que hace referencia a la clase Documento.
+                        Los atributos se escriben con minúscula y si tuviesen palabras en el medio, éstas van con mayúscula: colorDeOjos.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fecha 19/6/22
+            Autor: Rocio Olszevicki
+            descripcion: octava fila, significado del POO y origenes
+            descripcion: describiendo el tema requerido, con parrafos y foto
+          guiara al usuario para que en ningun momento se pierda-->
+      <div class="container py-4">
+        <div class="p-5 mb-4 bg-info rounded-5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid py-3">
+              <h1 class="display-3 fw-bold">Herencia</h1>
+              <div>
+                <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                      <h2></h2><br>
+                      <img src="../Multimedia/herenci.png" alt="" width="100%"><br>
+                      <p></p>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                      <h2></h2>
+                      <p>Herencia única: donde las subclases heredan las características de solo una superclase.
+                        Herencia Multinivel: una clase derivada heredará una clase base y, además, la clase derivada también actuará como la clase base de otra clase.
+                        Herencia Jerárquica: una clase sirve como una superclase (clase base) para más de una subclase.
+                        Herencia Múltiple (a través de interfaces): una clase puede tener más de una superclase y heredar características de todas las clases principales. Pero Java no admite herencia múltiple con clases, así que para lograrlo tenemos que usar Interfaces.
+                        Herencia Híbrida (a través de Interfaces): Es una mezcla de dos o más tipos de herencia anteriores. Como Java no admite herencia múltiple con clases, la herencia híbrida tampoco es posible con clases, pero como en el ejemplo anterior, podemos lograr el mismo resultado a través de Interfaces.</p>
+                      <img src="../Multimedia/simula.PNG" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>Han escrito <strong id="NoComentarios"></strong> comentarios</p>
+        <form action="" method="post">
+          <h2>Deja tu comentario</h2>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+            <input type="text" class="form-control usuario1" id="exampleFormControlTextarea1" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+            <input type="email" class="form-control email1" id="exampleFormControlTextarea1" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja un comentario</label>
+            <textarea class="form-control comentario1" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="col-12">
+              <button class="btn btn-info" type="button" id="boton">Enviar</button>
+            </div>
+          </div>
+      </form>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+
+      <div>
+        <p>Han escrito <strong id="NoComentarios"></strong> comentarios</p>
+        
+        
+      </div>
+      <div id="Comentarios">
+  
+      </div>
+      <div id="Usuarios">
+  
+      </div>
+      
+      <form action="" method="post">
+          <h2>Deja tu comentario</h2>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+            <textarea class="form-control usuario1" id="usuario" placeholder="ingrese su usuario" rows="1" ></textarea>
+          </div> 
+          
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja un comentario</label>
+            <textarea class="form-control comentario1" id="txtComentario" placeholder="ingrese su comentario" rows="3"></textarea>
+            <div class="col-12">
+              <button class="btn btn-info" type="button" id="btnEnviar">Enviar</button>
+            </div>
+          </div>
+            <p id="Error"></p>
+            
+          
+      </form>
+    </div>
+
+  </div>
+</div>
+</div>
+      <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; Pagina creada por "Chicas Codeando" 2022
+      </footer>
+    </div>
+
+
+    </main>
+
+    
+  
+
+
+
+
+    <script src="../JS/POO.js"></script>
+</body>
+
+</html>

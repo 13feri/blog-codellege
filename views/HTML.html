@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilosindex.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <title>HTML</title>
+</head>
+
+<body>
+  <header>
+    <!-- cabecera principal para los links y el titulo-->
+    <header>
+      <nav class="navbar bg-info">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../Multimedia/compass-fill.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          La Brujula
+        </a>
+        <ul class="nav justify-content-center bg-info mb">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../views/main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/HTML.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/javascript.html">Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/POO.html">POO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/log-in.html">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col -9"></div>
+      <h1>HTML</h1>
+      <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página
+        web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y
+        tablas
+        de datos. </p>
+
+
+      <h5>¿HTML es lenguaje de programación?</h5>
+      <p>HTML no es considerado un lenguaje de programación, ya que no puede crear funcionalidades dinámicas. En su
+        lugar, con HTML, los usuarios web pueden crear y estructurar secciones, párrafos y enlaces mediante elementos,
+        etiquetas y atributo. </p>
+      <p> Existe un gran debate entre programadores que consideran HTML como lenguaje de programación y los que no lo
+        consideran como dicho lenguaje sino como un lenguaje de etiqueta/lenguaje de marca.</p>
+      <p>Todas las páginas HTML cuentan con una serie de elementos HTML, formados por un conjunto
+        de <em>etiquetas</em> y <em>atributos</em> . Los elementos HTML son los bloques de construcción de una página
+        web. Una <u>etiqueta</u>
+        indica al navegador dónde empieza y termina un elemento, mientras que un <u>atributo</u> describe las
+        características
+        de un elemento.</p>
+
+      <h6> <u> <b>Etiquetas</b> </u> </h6>
+      <p>Las tres partes principales de una etiqueta son:</p>
+      <p>○ <b> Etiqueta de apertura</b>: Se utiliza para indicar dónde empieza a tener efecto un elemento. Esta se
+        envuelve con corchetes de apertura y cierre. </p>
+      <p>○ <b> Contenido</b>: Es el resultado que ven los demás usuarios.</p>
+      <p>○ <b> Etiqueta de cierre</b>: Igual que la de apertura, pero con una barra inclinada antes del nombre del
+        elemento. </p>
+      <div class="col-8">
+        <img src="../Multimedia/etiqueta html.png" alt="" width="100%">
+      </div>
+      <p>
+
+      </p>
+      <p>Algunas etiquetas (imágenes, saltos de líneas, separadores, etc.) no necesitan etiqueta de cierre y sólo es
+        necesario escribir la etiqueta de apertura. A estas etiquetas se las llama etiquetas <em>vacías</em>(void). No
+        utilizan una etiqueta de cierre porque no tienen contenido </p>
+
+      <h6> <u> <b>Atributos</b> </u> </h6>
+      <p>Las etiquetas HTML pueden contener uno o más atributos. Los atributos se agregan a una etiqueta para
+        proporcionar al navegador más información sobre cómo debe aparecer o comportarse la etiqueta. Los atributos
+        constan de un nombre y un valor separados por un signo igual (=), con el valor entre comillas dobles. </p>
+      <p> Un atributo debe tener siempre: </p>
+      <p>1 -Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más
+        atributos).</p>
+      <p>2- El nombre del atributo, seguido por un signo de igual (=).</p>
+      <p>3-Comillas de apertura y de cierre, encerrando el valor del atributo.</p>
+      <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+
+      <p>Aunque cada una de las etiquetas HTML define sus propios atributos, encontramos algunos comunes a muchas o casi
+        todas las etiquetas, que se dividen en cuatro grupos según su funcionalidad:</p>
+      <p>○ <b> Atributos básicos </b>: Los atributos básicos se utilizan en la mayoría de etiquetas HTML y XHTML, aunque
+        adquieren mayor sentido cuando se utilizan hojas de estilo en cascada (CSS):</p>
+        <div class="col-8"><img src="../Multimedia/atributo basico.png" alt="" width="100%"></div>
+      
+
+      <p>○ <b>Atributos de Internacionalización </b>: Estos atributos se utilizan en aquellas páginas que muestran sus
+        contenidos en varios idiomas y las que quieran indicar de forma explícita el idioma de sus contenidos: </p>
+        <div class="col-8"><img src="../Multimedia/atributo int.png" alt="" width="100%"></div>
+      
+
+      <p>○ <b> Atributos de Eventos</b>: Estos atributos se utilizan en las páginas web que incluyen código JavaScript
+        para realizar acciones dinámicas sobre los elementos de la página. </p>
+      <p>Pueden ser utilizados por: todos los elementos</p>
+      <div class="col-8"><img src="../Multimedia/atributo eventos.png" alt="" width="100%"></div>
+      
+
+      <p>Pueden ser utilizados por la etiqueta <u>body</u> </p>
+      <div class="col-8"><img src="../Multimedia/atributo evento2.png" alt="" width="100%"></div>
+      
+
+      <p>Pueden ser utilizados por elementos de formulario y etiqueta body</p>
+      <div class="col-8"><img src="../Multimedia/atributo evento3.png" alt="" width="100%"></div>
+      
+
+      <p>Pueden ser utilizados por varios</p>
+      <div class="col-8"> <img src="../Multimedia/atributo evento4.png" alt="" width="100%"></div>
+     
+
+      <p>○ <b> Atributos de Foco </b>: Se le denomina foco o focus, cuando un control o elemento del documento ha sido seleccionado.
+        Cuando ese elemento deja de estar seleccionado, "pierde el foco" y es el nuevo elemento seleccionado el que se
+        dice que tiene "el foco".</p>
+        <div class="col-8"><img src="../Multimedia/atributo foco.png" alt="" width="100%"></div>
+        
+
+
+
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+  <div>
+    <p>Han escrito <strong id="NoComentarios"></strong> comentarios</p>
+    
+    
+  </div>
+  <div id="Comentarios">
+
+  </div>
+  <div id="Usuarios">
+
+  </div>
+
+  
+  
+  <form action="" method="post">
+      <h2>Deja tu comentario</h2>
+      
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+        <textarea class="form-control usuario1" id="usuario" placeholder="ingrese su usuario" rows="1" ></textarea>
+      </div> 
+      
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Deja un comentario</label>
+        <textarea class="form-control comentario1" id="txtComentario" placeholder="ingrese su comentario" rows="3"></textarea>
+        <div class="col-12">
+          <button class="btn btn-info" type="button" id="btnEnviar">Enviar</button>
+        </div>
+      </div>
+        <p id="Error"></p>
+        
+      
+  </form>
+</div>
+</div>
+</div>
+</div>
+  <footer class="pt-3 mt-4 text-muted border-top">
+    &copy; Pagina creada por "Chicas Codeando" 2022
+  </footer>
+
+
+
+
+  <script src="./index.js"></script>
+  <script src="../JS/HTML.js"></script>
+</body>
+
+</html>

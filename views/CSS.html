@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/css.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+
+  <title>css</title>
+</head>
+
+<body>
+  <!-- cabecera principal para los links y el titulo-->
+  <header>
+    <nav class="navbar bg-info">
+      <a class="navbar-brand" href="/index.html">
+        <img src="../Multimedia/compass-fill.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+        La Brujula
+      </a>
+      <ul class="nav justify-content-center bg-info mb">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../views/main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/HTML.html">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/CSS.html">CSS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/javascript.html">Javascript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/POO.html">POO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/log-in.html">Cerrar Sesion</a>
+        </li>
+      </ul>
+    </nav>
+  </header> <br>
+  <!-- aqui puse un carusel
+                  autor Rocio Olszevicki
+                  descripcion: desliza las fotos sin dar el click en las flechas de los costados
+                  mas abajo va un titulo y unas fotos de 2 en 2-->
+                  
+  <div class="container">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../Multimedia/css.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../Multimedia/css2.PNG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../Multimedia/css3.PNG" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> <br><hr>
+    
+    <!--aqui puse div etiquetas de parrafo
+          autor Rocio Olszevicki
+          descripcion: mas abajo va una descripcion de lo que es CSS con un <marquee></marquee> que desliza los titulos-->
+    <div class="container">
+      <marquee behavior="alternate" direction="">
+        <h2>Que es CSS?</h2>
+      </marquee></em>
+      <p>CSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de
+        presentación de este, características tales como las capas o layouts, los colores y las fuentes.4​ Esta
+        separación busca mejorar la accesibilidad del documento, proveer más flexibilidad y control en la especificación
+        de características presentacionales, permitir que varios documentos HTML compartan un mismo estilo usando una
+        sola hoja de estilos separada en un archivo .css, y reducir la complejidad y la repetición de código en la
+        estructura del documento
+        La separación del formato y el contenido hace posible presentar el mismo documento marcado en diferentes estilos
+        para diferentes métodos de renderizado, como en pantalla, en impresión, en voz (mediante un navegador de voz o
+        un lector de pantalla), y dispositivos táctiles basados en el sistema Braille. También se puede mostrar una
+        página web de manera diferente dependiendo del tamaño de la pantalla o tipo de dispositivo. Los lectores pueden
+        especificar una hoja de estilos diferente, como una hoja de estilos CSS guardado en su computadora, para
+        sobreescribir la hoja de estilos del diseñador.
+        La especificación CSS describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de
+        una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de cascada,
+        de modo que las prioridades son calculadas y asignadas a las reglas, así que los resultados son predecibles.
+        La especificación CSS es mantenida por el World Wide Web Consortium (W3C). El MIME type text/css está registrado
+        para su uso por CSS descrito en el RFC 2318.5​.El W3C proporciona una herramienta de validación de CSS gratuita
+        para los documentos CSS.</p> <hr><br>
+      <em>
+        <marquee behavior="alternate" direction="">
+          <h2>¿Para qué sirve CSS?</h2>
+        </marquee>
+      </em>
+      <p>Con CSS puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y puedes guardar
+        los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran el
+        contenido.
+        A través de esta herramienta puedes crear formatos específicos útiles para comunicar tus ideas y crear
+        experiencias agradables para los usuarios del sitio web.
+        Diferencia entre HTML y CSS
+        HTML es un lenguaje de programación utilizado para dar estructura al contenido de un sitio web. Sus siglas en
+        inglés significan «lenguaje de marcas de hipertexto» (HyperText Markup Language), y hacen referencia al código
+        que define el significado de las instrucciones dadas a una plataforma computacional.
+        Estas instrucciones representan todos los enlaces (o hipertextos) que vinculan los contenidos de un sitio, por
+        lo que HTML es la base de cualquier página web. En este lenguaje es posible incluir toda la información
+        referente al contenido un sitio, así como las imágenes, audios y estilos del mismo; sin embargo, su uso para
+        estas tareas conlleva una mayor complejidad en el código fuente.
+        Para hacer más eficiente el uso de HTML, se han diseñado otros lenguajes computacionales para facilitar la
+        gestión de los datos relacionados con el diseño visual de las plataformas. CSS es uno de los lenguajes más
+        importantes utilizados para ordenar las instrucciones referentes a la apariencia de un sitio y presentar los
+        contenidos de una página de forma atractiva
+        De este modo, HTML se emplea para estructurar el contenido de un sitio, mientras que CSS se usa para estructurar
+        su presentación.
+        Básicamente, si el contenido es el rey, CSS es el segundo al mando. Por eso como propietario de un sitio o como
+        experto en marketing con conocimiento web es conveniente que comprendas algunos aspectos fundamentales.
+      </p> <br><hr>
+      <!--aqui puse div con fotos
+          autor Rocio Olszevicki
+          descripcion: mas abajo va una descripcion de lo que es CSS con un <marquee></marquee> que desliza los titulos-->
+      <em>
+        <marquee behavior="alternate" direction="">
+          <h2>Diseños con CSS</h2>
+        </marquee>
+      </em>
+      <div class="caja-fotos">
+        <div class="foto">
+          <img src="../Multimedia/cads-grid.PNG" alt="" width="100%" height="50%">
+          <p>diseño con Grid</p>
+          <img src="../Multimedia/container-css.PNG" alt="" width="100%" height="50%">
+          <p>diseño de pagina contenedora</p>
+        </div>
+        <div class="foto">
+          <img src="../Multimedia/tango.PNG" alt="" width="100%" height="50%">
+          <p>diseño con Formulario</p>
+          <img src="../Multimedia/PCs.PNG" alt="" width="100%" height="50%">
+          <p>Una mezcla de todo lo que se puede hacer con CSS</p>
+        </div> <br>
+        <!--aqui puse div con fotos y una animacion a lo ultimo como cierre una barra que simula estar cargandose-->
+      </div><br><br><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+      
+      <div>
+        <p>Han escrito <strong id="NoComentarios"></strong> comentarios</p>
+        
+        
+      </div>
+      <div id="Comentarios">
+  
+      </div>
+      <div id="Usuarios">
+  
+      </div>
+      
+      <form action="" method="post">
+          <h2>Deja tu comentario</h2>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+            <textarea class="form-control usuario1" id="usuario" placeholder="ingrese su usuario" rows="1" ></textarea>
+          </div> 
+          
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja un comentario</label>
+            <textarea class="form-control comentario1" id="txtComentario" placeholder="ingrese su comentario" rows="3"></textarea>
+            <div class="col-12">
+              <button class="btn btn-info" type="button" id="btnEnviar">Enviar</button>
+            </div>
+          </div>
+            <p id="Error"></p>
+            
+          
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+    
+      <footer>
+        <div class="pie-pagina">
+          <code>Copyrigth 2022 All Rigths Reserved &nbsp;|&nbsp;♥ <cite>No dejes de programar!</cite></code>
+
+        </div>
+      </footer>
+      
+    </div>
+  </div>
+
+  
+
+  
+
+  <script src="../JS/css.js"></script>
+  <script src="../JS/index.js"></script>
+
+</body>
+
+</html>

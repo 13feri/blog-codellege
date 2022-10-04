@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/log-in.css">
+
+    <title>Log-In</title>
+</head>
+<body>
+    <form class="form">
+        <h2>
+        <img src="../Multimedia/compass-fill.svg" alt="" class="Brujula">Brujula <hr>
+        </h2>
+        <h2 class="formTitulo">Inicia sesion</h2>
+        <p class="form_paragraph">Aun no tienes una cuenta? <a href="../views/formregistracion.html" class="form_link">Entra aqui!</a></p>
+        <div class="form_contenedor">
+            <div class="form_group">
+                <input type="text" id="txtNombre" class="form_input" placeholder=" " required>
+                <label for="name" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div> 
+            <div class="form_group">
+                <input type="text" id="email" class="form_input" placeholder=" "required> 
+                <label for="user" class="form_label">Email:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="password" id="contraseña" class="form_input" placeholder=" " required>
+                <label for="password" class="form_label">Contraseña:</label> 
+                <span class="form_line"></span>
+            </div>
+            <button class="form_submit" id="boton">Entra</button>
+            <p id="error"></p>
+            </div> 
+    </form>
+    
+    <div></div>
+    <a id="link" href="./main.html"></a>
+    <script src="../JS/log-in.js"></script>
+    <script src="../JS/log-in2.js"></script>
+
+
+</body>
+</html>

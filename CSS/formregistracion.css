@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:#15c8ce;
+}
+
+.brujula{
+    font-family:'Courier New', Courier, monospace;
+}
+.contenedor-form{
+    background-color: rgb(91, 219, 233);
+    margin: auto;
+    margin-top: 100px;
+    width: 30%;
+    height: 100%;
+    padding: 2em ;
+    border-radius: 10px;
+    box-shadow:0 10px 20px -10px;
+    background: linear-gradient( transparent 1%, #de5d0e1a 2%, #09b3fc6b 10%, transparent 80%, transparent), radial-gradient(circle, transparent 10%, #fc09e065 20%, #dfdbd6 80%, transparent 80%) 15px 15px, linear-gradient(#15c8ce 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #99dcde 1.2000000000000002px, #09fcf8 1.2000000000000002px) -0.6000000000000001px 0;
+    background-size: 30px 30px, 30px 30px, 15px 15px;
+}

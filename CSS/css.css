@@ -1,0 +1,72 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/*Diseño de las cajas y pocicionamiento de las fotos
+fecha: 21/6/22
+autor Rocio Olszevicki*/
+.caja-fotos{
+    display: flex;
+    height: 47rem;
+    width: 100% ;
+    padding: 20px; 
+}
+.foto{
+    padding: 10px;
+    padding-top: 10px;
+}
+/**/ /*Diseño de la animacion de la barra cargandose/deslizandose
+fecha: 21/6/22
+autor Rocio Olszevicki*/
+.progress {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.progress .outer {
+    width: 100%;
+    height: 14px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.progress .inner {
+    width: 0;
+    height: 100%;
+    background: #33cfff;
+    animation: loading 15s linear forwards ;
+}
+/*Paso a las directivas de como hacer la animacion
+fecha: 21/6/22
+autor Rocio Olszevicki*/
+@keyframes loading {
+    100% {
+        width: 100%;
+    }
+}
+/*Dandole estilos color y fuente a los titulos, footer code y p
+autor: Rocio Olszevicki
+fecha: 21/6/22
+*/
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.pie-pagina{
+    background-color: rgba(1, 10, 15, 0.108);
+    height: 90px;
+}
+code{
+    font-size: 13px;
+    color: #33cfff;
+}
+p{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+

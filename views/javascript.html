@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <title>Javascript</title>
+</head>
+
+<body>
+  <header>
+    <!-- cabecera principal para los links y el titulo-->
+    <header>
+      <nav class="navbar bg-info">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../Multimedia/compass-fill.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          La Brujula
+        </a>
+        <ul class="nav justify-content-center bg-info mb">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../views/main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/HTML.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/javascript.html">Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/POO.html">POO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/log-in.html">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h1>JAVASCRIPT</h1>
+        <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones
+          complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información
+          estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de
+          Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente
+          JavaScript está involucrado. Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales
+          (HTML y CSS).</p>
+
+        <p>JavaScript es un lenguaje de programación dinámico que tiene la capacidad de ser utilizado en muchos
+          dispositivos diferentes. Puede usarse en ordenadores personales, servidores web y teléfonos inteligentes. Es
+          un lenguaje interpretado, orientado a objetos, débilmente tipado y dinámico.
+
+          JavaScript se emplea comúnmente para el desarrollo web front-end y más recientemente para algunos desarrollos
+          back-end a través de frameworks como Node.Js. o Next.Js. Tiene características como la programación orientada
+          a objetos, funciones y herencia basada en prototipos.</p>
+
+        <h5>¿Por qué decimos que Javascript es un lenguaje dinámico?</h5>
+        <p>Corre directamente en la etapa de Runtime, sin una etapa de compilación previa. Esto permite probar nuestro
+          código inmediatamente; pero también es lo que hace que los errores no se muestren sino hasta que se ejecuta el
+          programa. Lo que se ve a primera vista, cuando se analiza el código, es muy probable que no sea lo que se va a
+          obtener cuando el programa se ejecute.</p>
+        <p>JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo) solo se conocerá al momento de su
+          ejecución en función de las condiciones dadas al momento de correrlo en un entorno real. En cambio, los
+          lenguajes estáticos no compilarán en código ejecutable a menos que todos los valores (o tipos de valores) se
+          conozcan por adelantado.</p>
+
+        <h5>¿Por qué es débilmente tipado?</h5>
+        <p>Porque los tipos de datos no están bien definidos en el lenguaje y permite, por ejemplo, operaciones entre
+          numerosos y letras. Esto sucede porque el lenguaje asume tipos de datos que no necesariamente fueron los que
+          se querían representar. Se pueden hacer operaciones entre tipos distintos de datos (enteros con strings,
+          booleanos con enteros, etc.).</p>
+
+        <!-- Indice de items-->
+      </div>
+      <div class="col-4 ">
+
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic">Indice</h4>
+          </div>
+
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Variables y tipos de datos</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Funciones</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Condicionales IF
+            </a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Ciclos</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">JSON</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="col-6"><br>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+
+          <!-- Desarrollo de cada item-->
+          <!-- Primero Variables-->
+
+          <h3 id="list-item-1">Variables y tipos de datos</h3>
+
+          <h6> <u>Variables</u></h6>
+          <p>Las variables son uno de los conceptos básicos de la programación y nos permiten almacenar información
+            temporal que podemos usar más adelante en nuestros programas. </p>
+          <p>Las variables se crean con la palabra clave <b>var</b> seguido del nombre de la variable. Opcionalmente, le
+            puedes asignar un valor a la variable utilizando el caracter igual y el valor que le quieras dar. El punto y
+            coma (;) al final es opcional pero se considera una buena práctica tenerlo.</p>
+          <p>Las palabras reservadas de JavaScript no se pueden usar como nombres de variables.
+            Como buena práctica se recomienda empezar las variables con una letra en minúscula y, si el nombre se
+            compone de varias palabras, capitalizar cada palabra después de la primera. Por ejemplo <em>firstName</em>.
+            Los nombres de las variables diferencian mayúsculas y minúsculas (p.e. <em>firstname</em> es diferente a
+            <em>firstName</em>).
+          </p>
+
+
+          <h6> <u>Tipos de Datos</u></h6>
+          <p> Existen 7 tipos de datos en Javascript:</p>
+          <p>○ <b> String</b>: Cadenas de Texto. Es un conjunto de caracteres Unicode(letras,digitos,signos de
+            puntuación y mas),este tipo de dato es el encargado de representar texto en JavaScript. </p>
+          <p>○ <b> Number</b>: Valores númericos. No se distingue entre los valores enteros y de punto flotante. </p>
+          <p>○ <b> Boolean</b>: Este tipo de dato almacena 1 bit puede ser <em>true</em> o <em>false</em> son utilizados
+            para registrar un estado (VERDADERO O FALSO). </p>
+          <p>○ <b> Null</b>: Es un valor asignado tiene el valor de “no valor”. </p>
+          <p>○ <b> Undefined</b>: Una variable a la que no se le ha asignado ningún valor tiene el valor undefined. </p>
+          <p>○ <b> Symbol</b>: Nuevo en ECMAScript 2015. Este tipo de datos cuyos valores son únicos y no pueden ser
+            alterados. Dichos valores pueden ser utilizados como identificadores (claves) de las propiedades de los
+            objetos. Cada valor del tipo Symbol tiene asociado un valor del tipo String o Undefined que sirve únicamente
+            como descripción del símbolo. mdn</p>
+          <p>○ <b> Object</b>: Un valor en memoria al que podemos acceder por un identificador. Dado que JavaScript esta
+            diseñado en un paradigma basado a objetos. Decimos que un objeto es una colección de propiedades, estos
+            objetos se pueden comparar con objetos de la vida real objetos tangibles.</p>
+
+          <p>Estos tipos se dividen en dos grupos, Primitivos y de Objeto.</p>
+          <h7> <u>Tipos Primitivos</u> </h7>
+          <p>Los valores primitivos son inmutables, no pueden ser cambiados.
+
+            String, Number, Boolean, null, undefined y Symbol son tipos primitivos.</p>
+
+          <h7> <u>Tipos Objetos</u> </h7>
+          <p>Un Objeto es un valor en memoria al que podemos acceder por un identificador.
+
+            En JavaScript los objetos pueden ser vistos como una colección de propiedades.</p>
+
+          <p> <b> <u> typeof </u> </b> </p>
+
+          <p>JavaScript proporciona un operador llamado <em>typeof</em> este operador que puede examinar un valor y
+            decirle qué tipo es.</p>
+          <img src="../Multimedia/typeof.png" alt="" width="100%">
+          <p>
+
+          </p>
+
+          <!-- Segundo Item Funciones-->
+
+
+          <h3 id="list-item-2">Funciones</h3>
+          <p>Las funciones son uno de los fragmentos de código mas usados en Javascript. Una función es un conjunto
+            reutilizable de declaraciones para realizar una tarea especifica.
+            A las funciones se le pueden pasar uno o más valores por parámetros y utilizar estos para devolver un valor
+            al finalizar la ejecución de la misma. Para utilizar una función,debemos primero definirla, para poder
+            definir una función utilizamos la palabra reservada <em>function</em> todas las funciones tienen un aspecto
+            parecido a este:</p>
+          <img src="../Multimedia/1_1lwuVN4mfbpYxzj0pVh1Kg.png" alt="" width="100%">
+          <p>Tienen un nombre, aunque también pueden ser anónimas y también pueden recibir datos por parámetros.</p>
+
+
+          <h6><u>Parámetros</u> </h6>
+
+          <p>Las entradas a las funciones se conocen como parámetros, cuando una función se declara o se define podemos
+            brindarle valores por parámetros estos valores serán como variables dentro del cuerpo de la función.
+            Cuando se llama a esta función, estos parámetros tendrán el valor de lo que se pase como argumentos. Aunque
+            también podemos definir funciones sin ningún tipo de parámetro.</p>
+
+          <h6><u>Return</u> </h6>
+
+          <p>Las funciones devuelven un resultado, este resultado es retornado o devuelto por una palabra reservada
+            llamada <em>return</em> . Esta palabra finaliza la ejecución de la función y retorna un valor, un dato a
+            tener en cuenta es que si olvidamos la palabra return la función nos arrojara un undefined por defecto.</p>
+
+
+          <h6><u>Funciones de flecha</u> </h6>
+          <p>Las <em>Arrow Functions</em> o Funciones de flecha, estas funciones son limpias y concisas. Para declarar
+            una Arrow Function no necesitamos de la palabra function si no que utilizamos una flecha => para separar los
+            parámetros del cuerpo.</p>
+          <p>Otra característica a tener en cuenta es que, si solo tenemos un solo parámetro no necesitamos utilizar ()
+            al rededor de las listas de parámetros.
+            Y si solo tiene una expresión nos podemos olvidar de la palabra <em>return</em> y todo va a funcionar bien!
+          </p>
+
+          <img src="../Multimedia/arrow funciones.png" alt="" width="110%">
+
+
+          <p>
+
+          </p>
+
+
+          <!-- Tercer item Condicionales-->
+          <h3 id="list-item-3">Condicionales IF </h3>
+          <p>La toma de decisiones en programación es similar a la toma de decisiones en la vida real. En programación
+            también enfrentamos algunas situaciones en las que queremos que se ejecute un cierto bloque de código cuando
+            se cumple alguna condición.</p>
+
+          <p>Los lenguajes de programación utilizan instrucciones condicionales para controlar el flujo de ejecución del
+            programa en función de ciertas condiciones. Estos se utilizan para hacer que el flujo de ejecución avance y
+            se ramifique en función de los cambios en el estado de un programa.</p>
+
+          <h6> <u>Declaraciones condicionales de Javascript:</u></h6>
+          <p>○ <b> if</b>: Esta declaración es la condición más simple para tomar decisiones. Funciona de la siguiente
+            manera, primero se evalúa una expresión, si da resultado positivo se realizan las acciones relacionadas con
+            el caso positivo. </p>
+          <img src="../Multimedia/if.png" alt="" width="100%">
+
+          <p>
+
+          </p>
+          <p>○ <b> if-else</b>: La sentencia if sola nos dice que si una condición es verdadera ejecutará un bloque de
+            declaraciones o sentencias JavaScript y si la condición es falsa no lo hará. Pero qué pasa si queremos hacer
+            algo más si la condición es falsa. Aquí viene la otra declaración. Podemos usar la instrucción <em>else</em>
+            con la
+            instrucción if para ejecutar un bloque de código cuando la condición es falsa. </p>
+          <img src="../Multimedia/if else.png" alt="" width="100%">
+          <p>
+
+          </p>
+          <p>○ <b> if anidado</b>: Un if anidado es una sentencia if que esta dentro de otro if o else. Anidado
+            significa una sentencia if dentro de una sentencia if. </p>
+          <img src="../Multimedia/if anidado.png" alt="">
+          <p>
+
+          </p>
+          <p>○ <b> else if</b>: En general, es preferible no tener que anidar condicionales porque son difíciles de leer
+            y entender. Otro atajo que nos ofrece JavaScript para los condicionales es el else if, que significa "De lo
+            contrario, si ..." en Inglés. </p>
+          <img src="../Multimedia/else if.png" alt="" width="140%">
+          <p>
+
+          </p>
+          <p>○ <b> Operador IF</b>: Hay un operador que no hemos visto todavía y es una forma más esquemática de
+            realizar algunos IF sencillos. Proviene del lenguaje C, donde se escriben muy pocas líneas de código y donde
+            cuanto menos escribamos más elegantes seremos. Este operador es un claro ejemplo de ahorro de líneas y
+            caracteres al escribir los scripts. </p>
+          <img src="../Multimedia/operador if.png" alt="" width="100%">
+
+          <p>Este ejemplo no sólo realiza una comparación de valores, además asigna un valor a una variable. Lo que hace
+            es evaluar la condición (colocada entre paréntesis) y si es positiva asigna el valor1 a la variable y en
+            caso contrario le asigna el valor2.</p>
+          <p>
+
+          </p>
+
+          <!-- Cuarto item ciclos-->
+          <h3 id="list-item-4">Ciclos</h3>
+          <p>Los ciclos nos permiten repetir la ejecución de un código varias veces.</p>
+          <p>Los tres tipos más comunes de bucles son:</p>
+          <p>○ <b> for</b>: Consiste de tres expresiones y una declaración. </p>
+          <p> <u>- Inicialización:</u> Sucede antes de la primera ejecución del bucle. Esta expresión es comúnmente
+            utilizada para crear contadores. Las variables creadas tienen un alcance limitado al cuerpo del
+            bucle. Una vez que el bucle ha terminado su ejecución las variables son destruidas. </p>
+
+          <p><u>- Condición:</u> Expresión que es evaluada antes de la ejecución de cada iteración. Si se omite, esta
+            expresión es evaluada como <em>verdadera</em>. Si devuelve <em>true</em>, la sentencia del cuerpo del bucle
+            se ejecuta. Si devuelve <em>false</em> , el bucle se detiene.</p>
+
+          <p><u>- Expresión Final:</u> Expresión que se ejecuta luego de cada iteración. Usualmente es utilizada para
+            incrementar un contador. Pero también puede ser utilizada para decrementar el contador.</p>
+
+          <p><u>- Sentencia o Declaración:</u>Código que será ejecutado repetidamente por el bucle. </p>
+          <img src="../Multimedia/for.png" alt="" width="100%">
+
+
+          <p>Cualquiera de estas tres expresiones o la sentencia del cuerpo del bucle pueden ser omitidas. Los bucles
+            For son comúnmente utilizados para contar un cierto número de iteraciones para repetir una sentencia. Puedes
+            utilizar una sentencia break para salir del bucle antes que la expresión de condición devuelva false.</p>
+          <p>
+
+          </p>
+
+          <p>○ <b> while</b>: El bucle while empieza por evaluar la condición. Si la condición devuelve
+            <em>true</em>, entonces las sentencias son ejecutadas. Si la condición devuelve <em>false</em> , entonces
+            las sentencias no son ejecutadas. Luego el bucle finaliza.
+          </p>
+
+          <p><u>- Sentencia(s):</u>Una sentencia es código que se ejecuta si la condición devuelve verdadero ( true ).
+          </p>
+          <p><u>- Condición:</u> Es una expresión booleana (Boolean) que es evaluada antes de cada paso (iteración) por
+            el bucle. Si esta condición evalúa a verdadero ( true ), las sentencias son ejecutadas. Cuando la condición
+            evalúa a falso ( false ), la ejecución continúa con la siguiente sentencia luego del bucle while.</p>
+          <img src="../Multimedia/while.png" alt="" width="100%">
+
+          <p>
+
+          </p>
+
+
+          <p>○ <b> do while</b>: El bucle do...while está cercanamente relacionado al bucle while . En el bucle
+            do...while , la condición se evalúa al final. </p>
+          <p>Los bucles Do...While aseguran que el código se ejecute por lo menos una vez, y luego de esta primera
+            ejecución, si la condición dentro del while() es true, continúa con el bucle, de otra forma, se detiene.</p>
+          <img src="../Multimedia/while do.png" alt="" width="100%">
+          <p>
+
+          </p>
+
+          <!-- Quinto item JSON-->
+          <h3 id="list-item-5">JSON</h3>
+
+          <p>JSON son las iniciales de <u>JavaScript Object Notation</u> el cual es un formato que guarda objetos de
+            javascript
+            muy ligeros y fáciles de interpretar, lo cual hace que sea mas aceptado que xml y soportado por otros
+            lenguajes de programación como python, C/C++, entre otras.
+
+            Podemos encontrar archivos json en APIs como la de youtube o la de instagram las cuales son mucho más
+            fáciles de leer que un archivo de xml y más cuando de javascript se trata.</p>
+          <p>Muchos lenguajes de programación proporcionan métodos para analizar una cadena de texto con este formato en
+            un objeto nativo y viceversa. </p>
+          <p>Según la descripción de Stack Overflow, JSON “define seis tipos de valores: nulo, números, cadenas,
+            booleanos, matrices y objetos”.</p>
+          <p>Pese a su nombre, no es necesariamente parte de JavaScript, de hecho, es un estándar basado en texto plano
+            para el intercambio de datos, por lo que se usa en muchos sistemas que requieren mostrar o enviar
+            información para ser interpretada por otros sistemas.</p>
+          <p>Una de las características de JSON, al ser un formato que es independiente de cualquier lenguaje de
+            programación, es que los servicios que comparten información por este método no necesitan hablar el mismo
+            idioma, es decir, el emisor puede ser Java y el receptor Python, pues cada uno tiene su propia librería para
+            codificar y decodificar cadenas en este formato. </p>
+          <p>Características de JSON: </p>
+          <p>○ JSON es solo un formato de datos.</p>
+          <p>○ Requiere usar comillas dobles para las cadenas y los nombres de propiedades. Las comillas simples no son
+            válidas.</p>
+          <p>○ Una coma o dos puntos mal ubicados pueden producir que un archivo JSON no funcione. </p>
+          <p>○ Puede tomar la forma de cualquier tipo de datos que sea válido para ser incluido en un JSON, no solo
+            arreglos u objetos. Así, por ejemplo, una cadena o un número único podrían ser objetos JSON válidos.</p>
+          <p>○ A diferencia del código JavaScript, en el que las propiedades del objeto pueden no estar entre comillas,
+            en JSON solo las cadenas entre comillas pueden ser utilizadas como propiedades.</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p>Han escrito <strong id="NoComentarios"></strong> comentarios</p>
+
+
+        </div>
+        <div id="coments">
+
+        </div>
+        <div id="users">
+
+        </div>
+
+        <form action="" method="post">
+          <h2>Deja tu comentario</h2>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
+            <textarea class="form-control usuario1" id="user" placeholder="ingrese su usuario" rows="1"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja un comentario</label>
+            <textarea class="form-control comentario1" id="text" placeholder="ingrese su comentario"
+              rows="3"></textarea>
+            <div class="col-12">
+              <button class="btn btn-info" type="button" id="btnEnviar">Enviar</button>
+            </div>
+          </div>
+          <p id="Error"></p>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="pt-3 mt-4 text-muted border-top">
+    &copy; Pagina creada por "Chicas Codeando" 2022
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="./index.js"></script>
+  <script src="../JS/javascript.js"></script>
+</body>
+
+</html>
